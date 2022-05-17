@@ -26,6 +26,7 @@ public class Program {
         Item t3 = new Item(Operator.AND);
         Item t2 = new Item(Operator.AND, t3, t4);
         Item t1 = new Item(Operator.AND, t2, t5);
+        // board of binary gates
         int[] numbers = new int[]{1, 1, 1, 1, 0, 1, 1, 1};
         // this initial data was created only for one scenario - n = 3, in other cases we will need to create more data.
         // so all the others input (6, 8, 32) can be tested with a given array, but without a tree (or by looping from 0 to 2^n and in the body create a new node).
